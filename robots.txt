@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://nizarabuahmad.github.io/nordnova/sitemap.xml
+Sitemap: https://nordnova.github.io/sitemap.xml
