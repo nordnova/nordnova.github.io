@@ -1,2 +1,0 @@
-/* The Google Fonts request now lives in each page's <head>, per language, so it
-   is discovered on the first parse instead of after three nested @imports. */

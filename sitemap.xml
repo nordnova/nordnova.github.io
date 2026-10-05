@@ -2,123 +2,19 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://nizarabuahmad.github.io/nordnova/case-afro-baobab.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://nizarabuahmad.github.io/nordnova/case-afro-baobab.html"/>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://nizarabuahmad.github.io/nordnova/ar/case-afro-baobab.html"/>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://nizarabuahmad.github.io/nordnova/case-dr-basem.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://nizarabuahmad.github.io/nordnova/case-dr-basem.html"/>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://nizarabuahmad.github.io/nordnova/ar/case-dr-basem.html"/>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://nizarabuahmad.github.io/nordnova/case-first-academy.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://nizarabuahmad.github.io/nordnova/case-first-academy.html"/>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://nizarabuahmad.github.io/nordnova/ar/case-first-academy.html"/>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://nizarabuahmad.github.io/nordnova/case-iqra.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://nizarabuahmad.github.io/nordnova/case-iqra.html"/>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://nizarabuahmad.github.io/nordnova/ar/case-iqra.html"/>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://nizarabuahmad.github.io/nordnova/case-national-paints.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://nizarabuahmad.github.io/nordnova/case-national-paints.html"/>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://nizarabuahmad.github.io/nordnova/ar/case-national-paints.html"/>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://nizarabuahmad.github.io/nordnova/case-veolia.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://nizarabuahmad.github.io/nordnova/case-veolia.html"/>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://nizarabuahmad.github.io/nordnova/ar/case-veolia.html"/>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://nizarabuahmad.github.io/nordnova/contact.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://nizarabuahmad.github.io/nordnova/contact.html"/>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://nizarabuahmad.github.io/nordnova/ar/contact.html"/>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://nizarabuahmad.github.io/nordnova/index.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://nizarabuahmad.github.io/nordnova/index.html"/>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://nizarabuahmad.github.io/nordnova/ar/index.html"/>
+    <loc>https://nizarabuahmad.github.io/nordnova/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nizarabuahmad.github.io/nordnova/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://nizarabuahmad.github.io/nordnova/ar/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nizarabuahmad.github.io/nordnova/"/>
+    <lastmod>2026-10-05</lastmod>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://nizarabuahmad.github.io/nordnova/services.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://nizarabuahmad.github.io/nordnova/services.html"/>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://nizarabuahmad.github.io/nordnova/ar/services.html"/>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://nizarabuahmad.github.io/nordnova/work.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://nizarabuahmad.github.io/nordnova/work.html"/>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://nizarabuahmad.github.io/nordnova/ar/work.html"/>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://nizarabuahmad.github.io/nordnova/ar/case-afro-baobab.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://nizarabuahmad.github.io/nordnova/case-afro-baobab.html"/>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://nizarabuahmad.github.io/nordnova/ar/case-afro-baobab.html"/>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://nizarabuahmad.github.io/nordnova/ar/case-dr-basem.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://nizarabuahmad.github.io/nordnova/case-dr-basem.html"/>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://nizarabuahmad.github.io/nordnova/ar/case-dr-basem.html"/>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://nizarabuahmad.github.io/nordnova/ar/case-first-academy.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://nizarabuahmad.github.io/nordnova/case-first-academy.html"/>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://nizarabuahmad.github.io/nordnova/ar/case-first-academy.html"/>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://nizarabuahmad.github.io/nordnova/ar/case-iqra.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://nizarabuahmad.github.io/nordnova/case-iqra.html"/>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://nizarabuahmad.github.io/nordnova/ar/case-iqra.html"/>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://nizarabuahmad.github.io/nordnova/ar/case-national-paints.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://nizarabuahmad.github.io/nordnova/case-national-paints.html"/>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://nizarabuahmad.github.io/nordnova/ar/case-national-paints.html"/>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://nizarabuahmad.github.io/nordnova/ar/case-veolia.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://nizarabuahmad.github.io/nordnova/case-veolia.html"/>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://nizarabuahmad.github.io/nordnova/ar/case-veolia.html"/>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://nizarabuahmad.github.io/nordnova/ar/contact.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://nizarabuahmad.github.io/nordnova/contact.html"/>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://nizarabuahmad.github.io/nordnova/ar/contact.html"/>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://nizarabuahmad.github.io/nordnova/ar/index.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://nizarabuahmad.github.io/nordnova/index.html"/>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://nizarabuahmad.github.io/nordnova/ar/index.html"/>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://nizarabuahmad.github.io/nordnova/ar/services.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://nizarabuahmad.github.io/nordnova/services.html"/>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://nizarabuahmad.github.io/nordnova/ar/services.html"/>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://nizarabuahmad.github.io/nordnova/ar/work.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://nizarabuahmad.github.io/nordnova/work.html"/>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://nizarabuahmad.github.io/nordnova/ar/work.html"/>
-    <priority>0.7</priority>
+    <loc>https://nizarabuahmad.github.io/nordnova/ar/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nizarabuahmad.github.io/nordnova/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://nizarabuahmad.github.io/nordnova/ar/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nizarabuahmad.github.io/nordnova/"/>
+    <lastmod>2026-10-05</lastmod>
+    <priority>0.9</priority>
   </url>
 </urlset>

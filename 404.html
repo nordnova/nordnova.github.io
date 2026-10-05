@@ -2,74 +2,37 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="robots" content="noindex">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Page not found — Nordnova</title>
-<meta name="description" content="That page does not exist. Head back to the Nordnova homepage or get in touch.">
-<!-- TODO: og:url / og:image point at the GitHub Pages address. Swap the base to https://nordnova.com/ once the custom domain is live. -->
-<link rel="icon" href="favicon.svg" type="image/svg+xml">
-<link rel="icon" href="favicon-32.png" sizes="32x32">
-<link rel="apple-touch-icon" href="apple-touch-icon.png">
-<meta name="theme-color" content="#0B0B0F">
+<title>Page not found — Nord Nova</title>
+<meta name="robots" content="noindex">
+<base href="/nordnova/">
+<link rel="icon" href="assets/icon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<!-- Loaded here rather than through the design system's @import chain: that chain was
-     html -> style.css -> _ds/styles.css -> tokens/fonts.css -> Google, five requests deep
-     before a single glyph could be fetched. -->
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&family=Sora:wght@300;400;600;700;800&display=swap">
-<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Antonio:wght@400&family=Manrope:wght@400;600;700&family=IBM+Plex+Sans+Arabic:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="site.css">
 </head>
 <body>
-
-<nav class="nav">
-  <a class="brand" href="index.html">NORD<b>NOVA</b></a>
-  <div class="nav-links">
-    <a href="work.html">Experience</a>
-    <a href="services.html">What I Do</a>
-    <a href="contact.html">Contact</a>
+<header>
+  <div class="wrap nav">
+    <a class="logo" href="./" aria-label="Nord Nova home"><span>Nord</span><span>Nova<i class="sq"></i></span></a>
+    <a class="btn primary" href="./#contact">Contact us</a>
   </div>
-  <div class="nav-end">
-    <a class="lang" href="ar/contact.html" lang="ar" hreflang="ar">عربي</a>
-    <a class="btn btn-sm" href="contact.html">Book a Strategy Call</a>
-  </div>
-</nav>
-
-<main class="sec" style="padding-top:120px;padding-bottom:140px;text-align:center">
-  <svg viewBox="0 0 120 120" width="150" style="margin:0 auto 34px;display:block;opacity:.75" aria-hidden="true">
-    <g stroke="rgba(124,58,237,0.55)" stroke-width="1.4" stroke-linecap="round">
-      <circle cx="60" cy="60" r="4" fill="var(--nova-lime)" stroke="none"/>
-      <line x1="72" y1="60" x2="114" y2="60" transform="rotate(0.0 60 60)"/>
-      <line x1="72" y1="60" x2="92" y2="60" transform="rotate(22.5 60 60)"/>
-      <line x1="72" y1="60" x2="114" y2="60" transform="rotate(45.0 60 60)"/>
-      <line x1="72" y1="60" x2="92" y2="60" transform="rotate(67.5 60 60)"/>
-      <line x1="72" y1="60" x2="114" y2="60" transform="rotate(90.0 60 60)"/>
-      <line x1="72" y1="60" x2="92" y2="60" transform="rotate(112.5 60 60)"/>
-      <line x1="72" y1="60" x2="114" y2="60" transform="rotate(135.0 60 60)"/>
-      <line x1="72" y1="60" x2="92" y2="60" transform="rotate(157.5 60 60)"/>
-      <line x1="72" y1="60" x2="114" y2="60" transform="rotate(180.0 60 60)"/>
-      <line x1="72" y1="60" x2="92" y2="60" transform="rotate(202.5 60 60)"/>
-      <line x1="72" y1="60" x2="114" y2="60" transform="rotate(225.0 60 60)"/>
-      <line x1="72" y1="60" x2="92" y2="60" transform="rotate(247.5 60 60)"/>
-      <line x1="72" y1="60" x2="114" y2="60" transform="rotate(270.0 60 60)"/>
-      <line x1="72" y1="60" x2="92" y2="60" transform="rotate(292.5 60 60)"/>
-      <line x1="72" y1="60" x2="114" y2="60" transform="rotate(315.0 60 60)"/>
-      <line x1="72" y1="60" x2="92" y2="60" transform="rotate(337.5 60 60)"/>
-    </g>
-  </svg>
-  <p class="eyebrow">Error 404</p>
-  <h1 style="margin:20px auto 22px;max-width:16ch">This page doesn&rsquo;t exist.</h1>
-  <p class="lead" style="margin:0 auto 36px;text-align:center">The link may be out of date, or the page may have moved. Everything else is still where you left it.</p>
-  <div class="btns" style="justify-content:center">
-    <a class="btn" href="index.html">Back to the homepage</a>
-    <a class="btn btn-outline" href="work.html">See the case studies</a>
-  </div>
+</header>
+<main>
+  <section class="lost">
+    <div class="wrap">
+      <p class="eyebrow">Error 404</p>
+      <h1>This page has moved<span class="dot">.</span></h1>
+      <p class="lead" style="margin:24px 0 32px">Nord Nova now lives on a single page. Everything you were looking for is there.</p>
+      <p class="lead" lang="ar" dir="rtl" style="margin:0 0 32px;font-family:'IBM Plex Sans Arabic',sans-serif">انتقلت هذه الصفحة. كل المحتوى أصبح في صفحة واحدة.</p>
+      <div class="row">
+        <a class="btn coral" href="./">Go to the homepage</a>
+        <a class="btn" href="./#work">See the work</a>
+        <a class="btn" href="ar/" lang="ar">الصفحة العربية</a>
+      </div>
+    </div>
+  </section>
 </main>
-
-<footer>
-  <span class="brand">NORD<b>NOVA</b></span>
-  <span>Nordnova — the marketing practice of Nizar Abu Ahmad.</span>
-  <span>nordnova.com</span>
-</footer>
-
 </body>
 </html>
