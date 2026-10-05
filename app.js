@@ -126,3 +126,31 @@
     schedule();
   });
 })();
+
+// Work-sample galleries: native <dialog>, closes on Esc, the close button or a backdrop click.
+(function () {
+  Array.prototype.forEach.call(document.querySelectorAll('[data-gallery]'), function (btn) {
+    var dlg = document.getElementById(btn.dataset.gallery);
+    if (!dlg || !dlg.showModal) return;
+    var track = dlg.querySelector('.g-track');
+    btn.addEventListener('click', function () { dlg.showModal(); track.scrollLeft = 0; cur = 0; });
+    dlg.addEventListener('click', function (e) { if (e.target === dlg) dlg.close(); });
+    dlg.querySelector('.g-close').addEventListener('click', function () { dlg.close(); });
+    var figs = track.querySelectorAll('figure'), cur = 0;
+    function step(dir) {
+      cur = Math.max(0, Math.min(figs.length - 1, cur + dir));
+      figs[cur].scrollIntoView({ behavior: 'smooth', inline: 'center', block: 'nearest' });
+    }
+    // keep the index in sync when people swipe or drag the scrollbar
+    track.addEventListener('scroll', function () {
+      var mid = track.getBoundingClientRect().left + track.clientWidth / 2, best = 0, bd = Infinity;
+      Array.prototype.forEach.call(figs, function (f, k) {
+        var r = f.getBoundingClientRect(), d = Math.abs(r.left + r.width / 2 - mid);
+        if (d < bd) { bd = d; best = k; }
+      });
+      cur = best;
+    }, { passive: true });
+    dlg.querySelector('.g-prev').addEventListener('click', function () { step(-1); });
+    dlg.querySelector('.g-next').addEventListener('click', function () { step(1); });
+  });
+})();

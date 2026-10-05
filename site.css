@@ -253,3 +253,32 @@ html[lang=ar]{--display:'Noto Kufi Arabic',sans-serif;--body:'IBM Plex Sans Arab
 [lang=ar] .eyebrow,[lang=ar] .kind,[lang=ar] .tag,[lang=ar] .alt b,[lang=ar] form label,[lang=ar] .logos p,[lang=ar] .sub,[lang=ar] .proof-head{letter-spacing:0}
 [lang=ar] .eyebrow,[lang=ar] .sub,[lang=ar] .proof-head,[lang=ar] .kind{font-size:13px}
 [dir=rtl] .big,[dir=rtl] .res b,[dir=rtl] .case-top b,[dir=rtl] .step .k{direction:ltr;unicode-bidi:isolate;text-align:right}
+
+/* client logo chip in carousel */
+.who-id{display:flex;align-items:center;gap:10px;min-width:0}
+.who-logo{height:30px;width:auto;max-width:92px;object-fit:contain;background:#fff;border-radius:6px;padding:4px 7px;flex:none}
+
+/* work samples on case cards */
+.case-media{display:grid;grid-template-columns:1.25fr 1fr 1fr;grid-template-rows:minmax(0,1fr);gap:4px;height:200px;overflow:hidden;padding:4px;background:var(--ink);border:0;cursor:pointer;position:relative;font:inherit;text-align:start;width:100%}
+.case-media img{width:100%;height:100%;min-height:0;min-width:0;object-fit:cover;object-position:top;border-radius:4px;filter:brightness(.9);transition:filter .25s}
+.case-media:hover img,.case-media:focus-visible img{filter:none}
+.case-media:focus-visible{outline:3px solid var(--coral);outline-offset:2px}
+.case-media .more{position:absolute;inset-inline-end:12px;bottom:12px;background:#fff;color:var(--ink);font-size:13px;font-weight:700;padding:7px 13px;border-radius:999px;box-shadow:0 4px 14px rgba(0,0,0,.25)}
+.case-media .more::after{content:" ↗";color:var(--coral)}
+
+/* gallery dialog */
+.gallery{border:0;padding:0;background:transparent;color:#fff;width:min(1200px,94vw);max-width:none;max-height:none;margin:auto}
+.gallery::backdrop{background:rgba(12,12,12,.9)}
+.gallery[open]{animation:rise .35s cubic-bezier(.2,.7,.2,1)}
+.g-head{display:flex;align-items:center;gap:12px;padding:0 2px 14px}
+.g-head b{font-size:18px}
+.g-head span{color:var(--on-dark-2);font-size:14px;flex:1}
+.g-btn{flex:none;width:40px;height:40px;border-radius:50%;border:1px solid #444;background:#1c1c1c;color:#fff;font-size:17px;cursor:pointer;display:grid;place-items:center}
+.g-btn:hover{background:var(--coral);border-color:var(--coral)}
+[dir=rtl] .g-prev,[dir=rtl] .g-next{transform:scaleX(-1)}
+.g-track{display:flex;gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;scroll-behavior:smooth;padding-bottom:12px;scrollbar-color:#444 transparent}
+.g-track figure{flex:none;scroll-snap-align:center;margin:0}
+.g-track img{height:min(68vh,640px);width:auto;max-width:86vw;object-fit:contain;border-radius:8px;background:#111}
+.g-track figcaption{font-size:13px;color:var(--on-dark-2);margin-top:8px}
+body:has(.gallery[open]){overflow:hidden}
+@media(max-width:560px){.g-head span{display:none}.g-track img{height:auto;max-height:70vh;max-width:84vw}}
