@@ -5,7 +5,7 @@
 
   if (matchMedia('(prefers-reduced-motion: reduce)').matches) return;
 
-  var sel = 'section:not(.hero) .eyebrow, section:not(.hero) h2, section:not(.hero) .lead, .why li, .chips li, .card, .step, .flow li, .band blockquote, .principles li, .case, .about > *, .past img, .built li, .contact-grid > *';
+  var sel = 'section:not(.hero) .eyebrow, section:not(.hero) h2, section:not(.hero) .lead, .why li, .chips li, .card, .step, .flow li, .band blockquote, .principles li, .case, .venture, .about > *, .past img, .built li, .contact-grid > *';
   var els = Array.prototype.slice.call(document.querySelectorAll(sel));
   els.forEach(function (el) {
     var i = Array.prototype.indexOf.call(el.parentElement.children, el);
