@@ -282,3 +282,8 @@ html[lang=ar]{--display:'Noto Kufi Arabic',sans-serif;--body:'IBM Plex Sans Arab
 .g-track figcaption{font-size:13px;color:var(--on-dark-2);margin-top:8px}
 body:has(.gallery[open]){overflow:hidden}
 @media(max-width:560px){.g-head span{display:none}.g-track img{height:auto;max-height:70vh;max-width:84vw}}
+
+/* role chips on case studies */
+.roles{display:flex;flex-wrap:wrap;gap:6px}
+.roles li{font-size:12px;font-weight:600;padding:4px 10px;border-radius:999px;background:var(--bg-2);border:1px solid var(--line);color:var(--ink-2)}
+.roles li.lead{background:var(--ink);border-color:var(--ink);color:#fff}
