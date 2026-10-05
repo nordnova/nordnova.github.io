@@ -287,3 +287,11 @@ body:has(.gallery[open]){overflow:hidden}
 .roles{display:flex;flex-wrap:wrap;gap:6px}
 .roles li{font-size:12px;font-weight:600;padding:4px 10px;border-radius:999px;background:var(--bg-2);border:1px solid var(--line);color:var(--ink-2)}
 .roles li.lead{background:var(--ink);border-color:var(--ink);color:#fff}
+
+/* step list inside "How we did it" */
+details ol{margin:12px 0 0;padding:0;list-style:none;counter-reset:s;display:grid;gap:9px}
+details ol li{counter-increment:s;display:grid;grid-template-columns:20px 1fr;gap:8px;font-size:15px;line-height:1.5;color:var(--ink-2)}
+details ol li::before{content:counter(s);font-family:'Antonio',Impact,sans-serif;color:var(--coral);font-size:17px;line-height:1.35}
+details ol li b{color:var(--ink);font-weight:700}
+details .outcome{margin-top:12px;font-weight:700;color:var(--ink)}
+.work:has(details[open]){align-items:start}
