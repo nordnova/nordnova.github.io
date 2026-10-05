@@ -42,3 +42,87 @@
   addEventListener('load', check);
   check();
 })();
+
+// Results carousel: crossfade, autoplay with progress, pause on hover/focus, swipe, keys.
+(function () {
+  var reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var rtl = document.documentElement.dir === 'rtl';
+
+  // square grids are generated from data-n so the markup stays short
+  Array.prototype.forEach.call(document.querySelectorAll('.sq[data-n]'), function (g) {
+    var html = '';
+    for (var k = 0; k < +g.dataset.n; k++) html += '<i style="--k:' + k + '"></i>';
+    g.innerHTML = html;
+  });
+
+  Array.prototype.forEach.call(document.querySelectorAll('.carousel'), function (c) {
+    var slides = Array.prototype.slice.call(c.querySelectorAll('.slide'));
+    var dotsWrap = c.querySelector('.dots-nav'), count = c.querySelector('.count');
+    var dur = parseFloat(getComputedStyle(c).getPropertyValue('--dur')) * 1000 || 7000;
+    var i = 0, timer = null, paused = false;
+    if (slides.length < 2) return;
+
+    slides.forEach(function (s, k) {
+      s.setAttribute('role', 'group');
+      s.setAttribute('aria-roledescription', 'slide');
+      s.setAttribute('aria-label', (k + 1) + ' / ' + slides.length);
+      var b = document.createElement('button');
+      b.type = 'button';
+      b.setAttribute('aria-label', (c.dataset.dotLabel || 'Result') + ' ' + (k + 1));
+      b.addEventListener('click', function () { go(k); });
+      dotsWrap.appendChild(b);
+    });
+    var dots = dotsWrap.children;
+    function pad(n) { return (n < 10 ? '0' : '') + n; }
+
+    function go(n) {
+      slides[i].classList.remove('is-active'); slides[i].setAttribute('aria-hidden', 'true');
+      dots[i].removeAttribute('aria-current');
+      i = (n + slides.length) % slides.length;
+      slides[i].classList.add('is-active'); slides[i].removeAttribute('aria-hidden');
+      dots[i].setAttribute('aria-current', 'true');
+      count.textContent = pad(i + 1) + ' / ' + pad(slides.length);
+      schedule();
+    }
+    function schedule() {
+      clearTimeout(timer);
+      c.classList.remove('run');
+      void c.offsetWidth; // restart the progress bar animation
+      if (reduce || paused) return;
+      c.classList.add('run');
+      timer = setTimeout(function () { go(i + 1); }, dur);
+    }
+    function pause() { paused = true; clearTimeout(timer); c.classList.add('paused'); }
+    function resume() { if (!paused) return; paused = false; c.classList.remove('paused'); schedule(); }
+
+    c.querySelector('.prev').addEventListener('click', function () { go(i - 1); });
+    c.querySelector('.next').addEventListener('click', function () { go(i + 1); });
+    c.addEventListener('mouseenter', pause);
+    c.addEventListener('mouseleave', resume);
+    c.addEventListener('focusin', pause);
+    c.addEventListener('focusout', function (e) { if (!c.contains(e.relatedTarget)) resume(); });
+    document.addEventListener('visibilitychange', function () { document.hidden ? pause() : resume(); });
+    c.addEventListener('keydown', function (e) {
+      if (e.key !== 'ArrowLeft' && e.key !== 'ArrowRight') return;
+      var fwd = (e.key === 'ArrowRight') !== rtl;
+      go(i + (fwd ? 1 : -1));
+    });
+
+    var x0 = null;
+    var area = c.querySelector('.slides');
+    area.addEventListener('pointerdown', function (e) { x0 = e.clientX; });
+    area.addEventListener('pointerup', function (e) {
+      if (x0 === null) return;
+      var dx = e.clientX - x0; x0 = null;
+      if (Math.abs(dx) < 40) return;
+      var fwd = (dx < 0) !== rtl;
+      go(i + (fwd ? 1 : -1));
+    });
+
+    slides.forEach(function (s) { s.setAttribute('aria-hidden', 'true'); s.classList.remove('is-active'); });
+    i = 0; slides[0].classList.add('is-active'); slides[0].removeAttribute('aria-hidden');
+    dots[0].setAttribute('aria-current', 'true');
+    count.textContent = pad(1) + ' / ' + pad(slides.length);
+    schedule();
+  });
+})();

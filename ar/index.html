@@ -57,37 +57,108 @@
         </ul>
       </div>
 
-      <figure class="proof" aria-label="نتائج مختارة لعملائنا">
+      <figure class="proof carousel" aria-roledescription="carousel" aria-label="نتائج العملاء" data-dot-label="عرض النتيجة">
+        <svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs><linearGradient id="sg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#F0563F" stop-opacity=".35"/><stop offset="1" stop-color="#F0563F" stop-opacity="0"/></linearGradient></defs></svg>
         <figcaption class="proof-head"><span>نتائج العملاء</span><span class="live">Nord Nova</span></figcaption>
-        <div class="metric">
-          <b class="big" dir="ltr">61 → 120</b>
-          <span class="what">مقعداً في الروضة، كل المقاعد مشغولة</span>
-          <div class="bars" aria-hidden="true">
-            <div class="bar"><i style="--w:51%"></i><em>قبل · 61</em></div>
-            <div class="bar hot"><i style="--w:100%;--t:.9s"></i><em>بعد · 120</em></div>
-          </div>
-          <small>مدارس الأكاديمية الأولى · حملة واحدة</small>
-        </div>
-        <div class="metric-pair">
-          <div class="metric">
-            <b class="big">54K</b>
-            <span class="what">متابع من الصفر</span>
-            <svg class="spark" viewBox="0 0 100 40" preserveAspectRatio="none" aria-hidden="true">
-              <defs><linearGradient id="sg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#F0563F" stop-opacity=".35"/><stop offset="1" stop-color="#F0563F" stop-opacity="0"/></linearGradient></defs>
-              <path class="ar" d="M0 38 C18 37 30 34 44 28 S68 12 100 3 V40 H0Z"/>
-              <path class="ln" d="M0 38 C18 37 30 34 44 28 S68 12 100 3"/>
-            </svg>
-            <small>في أقل من شهرين</small>
-          </div>
-          <div class="metric">
-            <b class="big">~⅓</b>
-            <span class="what">كلفة الاستفسار</span>
-            <div class="bars" aria-hidden="true">
-              <div class="bar"><i style="--w:100%;--t:1.1s"></i><em>قبل</em></div>
-              <div class="bar hot"><i style="--w:33%;--t:1.4s"></i><em>بعد</em></div>
+        <div class="prog" aria-hidden="true"><i></i></div>
+        <div class="slides" aria-live="off">
+
+          <div class="slide">
+            <p class="who"><b>مدارس الأكاديمية الأولى</b><span>تعليم · عمّان</span></p>
+            <div class="metric">
+              <b class="big">61 → 120</b>
+              <span class="what">مقعداً في الروضة مُلئت في حملة واحدة، كل المقاعد مشغولة</span>
+              <div class="bars" aria-hidden="true">
+                <div class="bar"><i style="--w:51%"></i><em>قبل · 61</em></div>
+                <div class="bar hot"><i style="--w:100%;--t:.6s"></i><em>بعد · 120</em></div>
+              </div>
             </div>
-            <small>بإعادة هيكلة حساب واحد</small>
+            <div class="metric-pair">
+              <div class="metric">
+                <b class="big">~⅓</b><span class="what">كلفة الاستفسار</span>
+                <div class="bars" aria-hidden="true">
+                  <div class="bar"><i style="--w:100%;--t:.8s"></i><em>قبل</em></div>
+                  <div class="bar hot"><i style="--w:33%;--t:1s"></i><em>بعد</em></div>
+                </div>
+              </div>
+              <div class="metric">
+                <b class="big">2–3×</b><span class="what">إعلانات التسعير مقابل العامة</span>
+                <div class="bars" aria-hidden="true">
+                  <div class="bar"><i style="--w:36%;--t:.8s"></i><em>عامة</em></div>
+                  <div class="bar hot"><i style="--w:100%;--t:1s"></i><em>التسعير</em></div>
+                </div>
+              </div>
+            </div>
           </div>
+
+          <div class="slide">
+            <p class="who"><b>د. باسم العبود</b><span>مسالك بولية · سوريا</span></p>
+            <div class="metric">
+              <b class="big">54K</b>
+              <span class="what">متابع من الصفر في أقل من شهرين</span>
+              <div class="bars" aria-hidden="true">
+                <div class="bar hot"><i style="--w:100%"></i><em>فيسبوك · 30K</em></div>
+                <div class="bar"><i style="--w:80%;--t:.6s"></i><em>إنستغرام · 24K</em></div>
+              </div>
+            </div>
+            <div class="metric-pair">
+              <div class="metric">
+                <b class="big">0 → 54K</b><span class="what">نمو الجمهور</span>
+                <svg class="spark" viewBox="0 0 100 40" preserveAspectRatio="none" aria-hidden="true"><path class="ar" d="M0 38 C18 37 30 34 44 28 S68 12 100 3 V40 H0Z"/><path class="ln" d="M0 38 C18 37 30 34 44 28 S68 12 100 3"/></svg>
+              </div>
+              <div class="metric">
+                <b class="big">100%</b><span class="what">وصول إعلاني داخل سوريا</span>
+                <svg class="ring" viewBox="0 0 36 36" aria-hidden="true"><circle class="tr" cx="18" cy="18" r="15"/><circle class="vl" cx="18" cy="18" r="15" pathLength="100" style="--p:100"/></svg>
+              </div>
+            </div>
+          </div>
+
+          <div class="slide">
+            <p class="who"><b>مركز أفرو باوباب الثقافي</b><span>ثقافة · دبي</span></p>
+            <div class="metric">
+              <b class="big" dir="rtl" style="direction:rtl;text-align:right;font-family:var(--display);font-size:clamp(28px,3vw,40px)">3 ركائز إيرادات</b>
+              <span class="what">فئة جديدة كلياً، تموضعت وبُني نموذجها التجاري قبل يوم الافتتاح</span>
+              <div class="segs" aria-hidden="true"><span style="--k:0">المدارس</span><span style="--k:1">الشركات</span><span style="--k:2">الجمهور</span></div>
+            </div>
+            <div class="metric-pair">
+              <div class="metric">
+                <b class="big">6</b><span class="what">مسارات في نظام إدارة العملاء</span>
+                <div class="sq hot big-sq" data-n="6" aria-hidden="true"></div>
+              </div>
+              <div class="metric">
+                <b class="big">55</b><span class="what">رسالة بريدية مؤتمتة</span>
+                <div class="sq" data-n="55" aria-hidden="true"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="slide">
+            <p class="who"><b>ورشة آفاق</b><span>تدريب · السيرة الذاتية ولينكدإن وأبورك</span></p>
+            <div class="metric">
+              <b class="big">100%</b>
+              <span class="what">من المشاركين يوصون بالورشة لزملائهم</span>
+              <div class="bars" aria-hidden="true">
+                <div class="bar hot"><i style="--w:100%"></i><em>أكيد · 100%</em></div>
+              </div>
+            </div>
+            <div class="metric-pair">
+              <div class="metric">
+                <b class="big">82%</b><span class="what">قيّموها "ممتازة جداً"</span>
+                <svg class="ring" viewBox="0 0 36 36" aria-hidden="true"><circle class="tr" cx="18" cy="18" r="15"/><circle class="vl" cx="18" cy="18" r="15" pathLength="100" style="--p:82"/></svg>
+              </div>
+              <div class="metric">
+                <b class="big">11</b><span class="what">مشاركاً في التقييم</span>
+                <div class="sq hot big-sq" data-n="11" aria-hidden="true"></div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="car-nav">
+          <button type="button" class="arrow prev" aria-label="النتيجة السابقة">←</button>
+          <div class="dots-nav"></div>
+          <span class="count" aria-hidden="true"></span>
+          <button type="button" class="arrow next" aria-label="النتيجة التالية">→</button>
         </div>
       </figure>
     </div>
